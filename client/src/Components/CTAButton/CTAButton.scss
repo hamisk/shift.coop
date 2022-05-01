@@ -1,0 +1,15 @@
+.ctabutton {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: 1px blue solid;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+
+    &__text {
+        color: blue;
+    }
+}
