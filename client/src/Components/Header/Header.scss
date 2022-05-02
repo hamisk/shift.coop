@@ -1,3 +1,5 @@
+@use '../../styles/colors' as *;
+
 .header {
     display: flex;
 	width: 100%;
@@ -7,6 +9,8 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+    background-color: white;
+    z-index: 99;
 
     &__logo-nav {
         display: flex;
@@ -14,7 +18,7 @@
     }
 
     &__logo {
-        color: blue;
+        color: $color-bg-blue;
         font-weight: 500;
 		margin: 0 0.5rem;
     }
@@ -30,7 +34,7 @@
     }
 
 	&__nav-link {
-		color: blue;
+		color: $color-bg-blue;
 		margin: 0 0.5rem;
     }
 
