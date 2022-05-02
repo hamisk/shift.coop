@@ -1,0 +1,77 @@
+@use '../../styles/colors' as *;
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+
+    &__rowA {
+        margin: 0 3rem;
+        width: calc(100% - 6rem);
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-bf-blue;
+    }
+
+    &__logo {
+        color: $color-bg-blue;
+        font-weight: 500;
+		margin: 0 0.5rem;
+    }
+
+    &__links-columns {
+        display: flex;
+    }
+
+    &__links-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0.5rem 1rem;
+    }
+
+    &__links-subheader {
+        color: $color-bg-blue;
+        margin: 0;
+    }
+
+    &__links-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__link {}
+
+    &__a-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__rowB {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+    }
+
+    &__copyright {
+        font-weight: 300;
+    }
+
+    &__socials {
+        display: flex;
+    }
+
+    &__copy {}
+    
+    &__social-icon {
+        background-color: $color-bf-blue;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        margin: 0 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -6,6 +6,7 @@ import BodyA from './Pages/BodyA/BodyA';
 import BodyB from './Pages/BodyB/BodyB';
 import BodyC from './Pages/BodyC/BodyC';
 import Partners from './Pages/Partners/Partners';
+import Footer from './Components/Footer/Footer';
 
 const App: React.FC = () => {
 	return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
 			<BodyC />
 			<BodyB />
 			<Partners />
+			<Footer />
 		</div>
 	);
 }
