@@ -1,0 +1,42 @@
+@use '../../styles/colors' as *;
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    width: 100%;
+
+    &__heading {
+        font-size: 2rem;
+        color: $color-bg-blue;
+        margin: 2rem;
+    }
+
+    &__logos-box {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 50rem;
+    }
+
+    &__logo-overlay {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 1rem;
+    }
+
+    &__logo-bg {
+        height: 100%;
+        width: 100%;
+        background-color: $color-bf-blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+}

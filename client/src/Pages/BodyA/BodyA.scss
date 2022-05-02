@@ -1,0 +1,41 @@
+@use '../../styles/colors' as *;
+
+.bodyA {
+    width: 100%;
+    height: 90vh;
+    padding: 4rem;
+
+    &__title {
+        font-size: 4rem;
+        color: $color-bg-blue;
+    }
+
+    &__columns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__columnA {
+        width: 45%;
+    }
+
+    &__columnB {
+        @extend .bodyA__columnA;
+    }
+
+    &__copy-wrapper {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__subheading {
+        font-size: 1.5rem;
+        color: $color-bg-blue;
+    }
+
+    &__copy-text {
+
+    }
+}
