@@ -1,44 +1,46 @@
 @use '../../styles/colors' as *;
 
 .header {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 99;
+  text-transform: capitalize;
+
+  &__logo-nav {
     display: flex;
-	width: 100%;
-	height: 3rem;
-	justify-content: space-between;
-	align-items: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-    background-color: white;
-    z-index: 99;
+    align-items: center;
+  }
 
-    &__logo-nav {
-        display: flex;
-		align-items: center;
-    }
+  &__logo {
+    color: $color-bg-blue;
+    font-weight: 500;
+    margin: 0 0.5rem;
+  }
 
-    &__logo {
-        color: $color-bg-blue;
-        font-weight: 500;
-		margin: 0 0.5rem;
-    }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
 
-    &__nav {
-		display: flex;
-		align-items: center;
-    }
+  &__links {
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+  }
 
-    &__links {
-        display: flex;
-        list-style: none;
-    }
+  &__nav-link {
+    color: $color-bg-blue;
+    margin: 0 0.5rem;
+  }
 
-	&__nav-link {
-		color: $color-bg-blue;
-		margin: 0 0.5rem;
-    }
-
-    &__login-signup {
-        display: flex;
-    }
+  &__login-signup {
+    display: flex;
+  }
 }

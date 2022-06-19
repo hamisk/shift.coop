@@ -9,18 +9,18 @@ import Partners from './Pages/Partners/Partners';
 import Footer from './Components/Footer/Footer';
 
 const App: React.FC = () => {
-	return (
-		<div className="App">
-			<Header />
-			<Home />
-			<BodyA />
-			<BodyB />
-			<BodyC />
-			<BodyB />
-			<Partners />
-			<Footer />
-		</div>
-	);
-}
+  return (
+    <div className='App'>
+      <Header />
+      <Home />
+      <BodyA />
+      <BodyB />
+      <BodyC />
+      <BodyB />
+      <Partners />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
