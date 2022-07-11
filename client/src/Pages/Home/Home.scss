@@ -1,36 +1,44 @@
 @use '../../styles/colors' as *;
 
 .home {
-    height: 100vh;
-    width: 100%;
-    background-color: $color-bg-blue;
+  height: calc(100vh - 4rem);
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  background-color: $color-bg-blue;
+  //   align-items: center;
+
+  &__column-left {
+    width: 40%;
+    // height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    &__background {
-        padding: 4rem;
-        height: 90%;
-        width: 90%;
-        background-image: url(../../assets/images/ShiftDelivery-logo-large.png);
-        background-size:     contain;                      /* <------ */
-        background-repeat:   no-repeat;
-        background-position: center center; 
-        opacity: 0.5;
-        position: absolute;
-    }
+    flex-direction: column;
+    // justify-content: center;
+    padding: 1rem;
+  }
 
-    &__overlay {
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        z-index: 1;
-    }
+  &__column-right {
+    width: 60%;
+    height: 50%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  &__text-wrapper {
+    padding: 1rem 0;
+  }
 
-    &__title {
-        font-size: 4rem;
-        font-weight: 600;
-    }
+  &__heading {
+    color: $color-2nd-text;
+    font-size: 2.5rem;
+    // text-align: center;
+  }
+
+  &__copy {
+    color: $color-2nd-text;
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
 }
