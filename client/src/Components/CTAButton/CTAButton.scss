@@ -10,9 +10,17 @@
   justify-content: center;
   align-items: center;
   margin: 0 0.5rem;
+  cursor: pointer;
+  color: $color-bg-blue;
+
+  &:hover {
+    background-color: $color-bg-blue;
+    color: white;
+    transition: 0.5s ease all;
+  }
 
   &__text {
-    color: $color-shift-blue;
     font-weight: 500;
+    font-size: 1rem;
   }
 }
