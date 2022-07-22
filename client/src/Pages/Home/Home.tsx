@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import hero from '../../assets/images/moriah_deliver_coverphoto_facebook.jpg';
+import videoScreenshot from '../../assets/images/video-thumbnail.png';
 
 const Home: React.FC = () => {
   return (
@@ -21,13 +22,9 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='home__column-right'>
-        <iframe
-          className='home__video'
-          src='https://www.youtube.com/embed/7O_31DorPUk?controls=0'
-          title='YouTube video player'
-          frameBorder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowFullScreen></iframe>
+        <div className='home__screenshot-wrapper'>
+          <img src={videoScreenshot} alt='video thumbnail' className='home__screenshot' />
+        </div>
       </div>
     </section>
   );
